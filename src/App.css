@@ -59,7 +59,7 @@ main {
 .player-info {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: 15px 0 -15px 0;
   padding: 10px;
   background-color: white;
   border: solid black 2px;
@@ -67,6 +67,7 @@ main {
   font-weight: 600;
   width: 180px;
   height: 45px;
+  z-index: 1;
 }
 
 .gameboard {
@@ -80,6 +81,12 @@ main {
   box-shadow: 5px 5px 0px 0px #000000;
 }
 
+.collum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .row {
   width: 50px;
   height: 50px;
@@ -90,8 +97,18 @@ main {
   background-color: var(--back-color);
 }
 
+.insert-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 1.6rem;
+}
+
+.insert-btn:hover {
+  color: rgb(94, 94, 94);
+}
+
 .restart-btn {
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 10px;
   border-radius: 10px;
   border: none;
@@ -114,5 +131,11 @@ main {
 }
 
 .winner {
-  background-color: rgb(129, 129, 129);
+  animation: blinker 0.9s steps(1, end) infinite;
+}
+
+@keyframes blinker {
+  50% {
+    background-color: var(--back-color);
+  }
 }

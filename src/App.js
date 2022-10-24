@@ -86,23 +86,18 @@ function App() {
   return <main>
     <h1 className="title">Connect Four</h1>
     <div className="info-container">
-      {
-        winner ?
-          <div className="player-info">
-            <p>{`${winner} wins!`}</p>
-          </div>
-          :
-          <div className="player-info players-turn-container">
-            <p>{`${turnPlayer}'s turn`}</p>
-            <div
-              className={`player-icon ${turnPlayer === 'player1' ? 'player1-icon' : 'player2-icon'}`}
-            />
-          </div>
-      }
+      {winner ?
+        <div className="player-info">
+          <p>{`${winner} wins!`}</p>
+        </div>
+        :
+        <div className="player-info players-turn-container">
+          <p>{`${turnPlayer}'s turn`}</p>
+          <div
+            className={`player-icon ${turnPlayer === 'player1' ? 'player1-icon' : 'player2-icon'}`}
+          />
+        </div>}
     </div>
-
-
-
     <div className="gameboard">
       {renderGameBoard()}
     </div>
@@ -112,9 +107,6 @@ function App() {
       onClick={restartGame}
     >Restart
     </button>
-
-    {/* {winner &&
-      <p className="player-info">{`vencedor: ${winner}`}</p>} */}
   </main>
 }
 

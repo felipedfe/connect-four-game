@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Row from "./Row";
+import { FaArrowAltCircleDown } from 'react-icons/fa';
 
 function Collum(props) {
   let { index } = props;
@@ -58,9 +59,11 @@ function Collum(props) {
   return <div className={`collum collum-${index}`} >
     <button
       type="button"
+      className="insert-btn"
       onClick={handleInsertBtn}>
-      insert
+      <FaArrowAltCircleDown />
     </button>
+
     {renderRows()}
   </div>
 }
