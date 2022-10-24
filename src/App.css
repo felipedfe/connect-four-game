@@ -1,3 +1,9 @@
+:root {
+  --back-color: rgb(250, 255, 212);
+  --player1-color: rgb(255, 91, 151);
+  --player2-color: rgb(57, 255, 146);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,34 +11,106 @@
 }
 
 body {
-  margin-left: 50px;
-  background-color: rgb(161, 161, 161);
+  background-color: var(--back-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: solid black 2px;
+  margin-left: 10px;
+}
+
+.player1-icon {
+  background-color: var(--player1-color);
+}
+
+.player2-icon {
+  background-color: var(--player2-color);
+}
+
+.players-turn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title {
+  margin: 30px 0 10px 0;
+  padding: 18px 20px;
+  font-size: 3rem;
+  background-color: white;
+  border-radius: 10px;
+  border: solid black 5px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+}
+
+.player-info {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+  border: solid black 2px;
+  border-radius: 10px;
+  font-weight: 600;
+  width: 180px;
+  height: 45px;
+}
+
+.gameboard {
+  display: flex;
+  width: 450px;
+  padding: 30px;
+  border-radius: 5%;
+  border: solid black 2px;
+  background-color: rgb(145, 244, 255);
+  -webkit-box-shadow: 5px 5px 0px 0px #000000;
+  box-shadow: 5px 5px 0px 0px #000000;
 }
 
 .row {
   width: 50px;
   height: 50px;
-  /* padding: 20px; */
   border: solid black 2px;
   border-bottom: solid black 5px;
   border-radius: 50%;
   margin: 3px;
+  background-color: var(--back-color);
 }
 
-.gameboard {
-  display: flex;
-  /* border-radius: 10%; */
-  padding: 20px;
-  /* width: 420px; */
-  background-color: rgb(255, 255, 255);
+.restart-btn {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: black;
+}
+
+.restart-btn:hover {
+  background-color: rgb(94, 94, 94);
 }
 
 .player1 {
-  background-color: rgb(255, 91, 151);
+  background-color: var(--player1-color);
 }
 
 .player2 {
-  background-color: rgb(57, 255, 146);
+  background-color: var(--player2-color);
 }
 
 .winner {
