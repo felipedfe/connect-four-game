@@ -1,15 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin-left: 50px;
+  background-color: rgb(161, 161, 161);
 }
 
 .row {
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
+  /* padding: 20px; */
   border: solid black 2px;
+  border-bottom: solid black 5px;
+  border-radius: 50%;
+  margin: 3px;
 }
 
 .gameboard {
   display: flex;
-  width: 350px;
-  /* background-color: pink; */
+  /* border-radius: 10%; */
+  padding: 20px;
+  /* width: 420px; */
+  background-color: rgb(255, 255, 255);
+}
+
+.player1 {
+  background-color: rgb(255, 91, 151);
+}
+
+.player2 {
+  background-color: rgb(57, 255, 146);
+}
+
+.winner {
+  background-color: rgb(129, 129, 129);
 }
