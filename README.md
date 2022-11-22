@@ -2,7 +2,7 @@
 <img src="https://github.com/felipedfe/connect-four-game/blob/main/connect-4.png" alt="tela da aplicação" width="600">
 
 ## •Descrição
-Essa aplicação simula o Connect Four, um jogo de tabuleiro onde vence o jogador que conseguir fazer uma fileira de quatro peças em qualquer sentido.
+Essa aplicação simula o Connect Four, um jogo de tabuleiro onde vence o jogador que conseguir fazer uma fileira de quatro peças em qualquer sentido primeiro.
 
 ## •Tecnologias e bibliotecas
 - Javascript
