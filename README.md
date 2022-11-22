@@ -1,5 +1,6 @@
 # Connect Four
 ![Tela da aplicação](https://github.com/felipedfe/connect-four-game/blob/main/connect-4.png)
+<img src="https://github.com/felipedfe/connect-four-game/blob/main/connect-4.png">
 
 ## •Descrição
 Essa aplicação simula o Connect Four, um joguinho de tabuleiro onde vence o jogador que conseguir fazer uma fileira de quatro peças em qualquer sentido.
