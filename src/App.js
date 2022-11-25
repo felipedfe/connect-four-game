@@ -90,9 +90,9 @@ function App() {
       winner={winner}
       turnPlayer={turnPlayer}
     />
-    <div className="gameboard">
-      {renderGameBoard()}
-    </div>
+      <div className="gameboard">
+        {renderGameBoard()}
+      </div>
     <button
       className="restart-btn"
       type="button"
