@@ -1,19 +1,19 @@
 # Connect Four
 <img src="https://github.com/felipedfe/connect-four-game/blob/main/connect-4.png" alt="tela da aplicação" width="600">
 
-## •Descrição
-Essa aplicação simula o Connect Four, um jogo de tabuleiro onde vence o jogador que conseguir fazer uma fileira de quatro peças em qualquer sentido primeiro.
+## •Description
+This application simulates Connect Four, a board game where the player who manages to make a row of four pieces in any direction first wins.
 
-## •Aprendizado
-Foi uma ótima (e desafiadora!) experiência destrinchar a lógica do jogo e conseguir uma solução própria pra ele. Tive dificuldade para fazer comparação de igualdade com objetos, mas consegui uma solução. Pesquisando depois, descobri uma biblioteca que faz esse tipo de comparação e pretendo refatorar o código :)
+## •What i learned
+It was a great (and challenging!) experience to unravel the logic of the game and come up with your own solution for it. I had difficulty doing equality comparison with objects, but I got a solution. Researching later, I found a library that does this type of comparison and I intend to refactor the code :)
 
-## •Tecnologias e bibliotecas
+## •Technologies and Libraries
 - Javascript
 - HTML
 - CSS
 - React.js
 
-## •Executando a aplicação
-- Clone o repositório em sua máquina
-- No terminal, instale as dependência da aplicação: ```npm install```
-- Agora é só colocar a aplicação para rodar: ```npm start```
+## •How to run the application
+- Clone the repository on your machine
+- In the terminal, install the application's dependencies: ```npm install```
+- Now just put the application to run!: ```npm start```
